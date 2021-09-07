@@ -8,6 +8,7 @@ namespace valid_parentheses
         {
             Solution solution = new();
 
+            Console.WriteLine(solution.IsValid("(([]){})"));
             Console.WriteLine(solution.IsValid("{[()]}{(}"));
             Console.WriteLine(solution.IsValid("[}"));
             Console.WriteLine(solution.IsValid("[]"));
