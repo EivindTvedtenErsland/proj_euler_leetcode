@@ -27,7 +27,7 @@ namespace buy_stock
                     //           +1   +5   -2   -2   +5
                     // currentMax:  1 -> 6 -> 4 -> 2 -> 7
                     // maxSoFar:    1 -> 6 -> 6 -> 6 -> 7
-                    Math.Max(0, currentMax += prices[i] - prices[i - 1]);
+                    currentMax = Math.Max(0, currentMax += prices[i] - prices[i - 1]);
                     maxSoFar = Math.Max(maxSoFar, currentMax);
                }
 

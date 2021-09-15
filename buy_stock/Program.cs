@@ -13,6 +13,8 @@ namespace buy_stock
 
             // Should give 1 (Buy at 4; Sell at 5)
             Console.WriteLine(solution.MaxProfit(new int[]{4,5,3,2,0,0}));
+
+            Console.WriteLine(solution.MaxProfit(new int[]{7,1,5,3,6,4}));
         }
     }
 }
