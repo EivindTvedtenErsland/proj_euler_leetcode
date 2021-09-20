@@ -23,8 +23,8 @@ namespace two_sum
                     temp[1] = ValLookup[complement];
                     return temp;
                 }
+                
                 //Added this part after looking at others solutions since populating a dict at start fails for duplicate nums values (C# dicts require unique keys)
-                //This is a notable performance loss, and leads to runtimes similar to just brute forcing, but ¯\_(ツ)_/¯
                 else if (!ValLookup.ContainsValue(complement)){
 
                     //Add a dict which contains keyvaluepairs which are reversed compared to the nums array (example: nums[0] = 13, ValLookup[13] = 0)
